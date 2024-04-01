@@ -135,19 +135,19 @@ const Navbar: React.FC = () => {
                         </button>
                     </div>
                     <div>
-                        <div className="flex md:hidden w-screen absolute bg-[white] bg-opacity-70 ">
+                        <div className="flex md:hidden w-screen absolute bg-[#FFD1E3] roboto bg-opacity-70 ">
                             {isMenuOpen ? (
                                 <div className="flex flex-col justify-center  gap-8 items-center text-center w-full h-screen  ">
                                     {NavData.map((item, index) => {
                                         return (
                                             <div
                                                 key={item.id}
-                                                className={`justify-between cursor-pointer items-center  py-4 transform transition-transform ease-in-out ${isMenuOpen ? `w-fit` : "w-0 self-end"
+                                                className={`justify-between cursor-pointer roboto items-center  py-4 transform transition-transform ease-in-out ${isMenuOpen ? `w-fit` : "w-0 self-end"
                                                     } `}
                                                 style={{ transitionDuration: `${400 + index * 100}ms` }}
                                             >
                                                 <Link
-                                                    className=" text-[#7360DF] text-3xl"
+                                                    className=" text-[#392467] roboto text-3xl"
                                                     onClick={toggleMenu}
                                                     href={item.path}
                                                 >

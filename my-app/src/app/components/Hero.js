@@ -29,7 +29,7 @@ function hero() {
 
 
         <main className='heroBg ' id='#'>
-            <BackgroundGradientAnimation className='h-full'>
+            <BackgroundGradientAnimation className=''>
                 <div className="flex h-[39rem] sm:h-[44rem] md:h-[39rem] lg:h-[36rem] xl:h-[38rem] justify-center   w-full bg-red flex-col md:flex-row">
 
 
