@@ -56,9 +56,9 @@
   font-family: Roboto;
 }
 
-.heroBg {
+/* .heroBg {
   background: linear-gradient(-45deg, #7360DF 5%, #33186B 90%, #33186B 100%);
-}
+} */
 
 .aboutus-bg {
   background: linear-gradient(225deg, #1B1A55 5%, #1B1A55 15%, #000 100%);

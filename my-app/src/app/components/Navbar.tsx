@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
         <>
             <nav
                 className={
-                    "bg-[rgba(0, 0, 0, 0.68);] fixed z-50 sm-0 w-full flex text-[#C499F3] hero-txt"
+                    "bg-[rgba(0, 0, 0, 0.68);] fixed z-50 sm-0 w-full flex text-[#7360DF] hero-txt"
 
                 }
             >
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                         return (
                             <div
                                 key={item.id}
-                                className="justify-between items-center md:text-xl hover:text-[#7360DF]  py-4"
+                                className="justify-between items-center md:text-xl hover:text-[#533a89]  py-4"
                             >
                                 <Link className="md:px-7 hidden md:flex " href={item.path} >
                                     {item.title}
@@ -147,7 +147,7 @@ const Navbar: React.FC = () => {
                                                 style={{ transitionDuration: `${400 + index * 100}ms` }}
                                             >
                                                 <Link
-                                                    className=" text-[#C499F3] text-3xl"
+                                                    className=" text-[#7360DF] text-3xl"
                                                     onClick={toggleMenu}
                                                     href={item.path}
                                                 >

@@ -70,13 +70,13 @@ const Faq = () => {
 
     return (
         <main>
-            <section className="flex flex-col heroBg gap-12 pb-[12rem]" id="faq">
+            <section className="flex flex-col heroBg bg-[#070F2B] gap-12 pb-[12rem]" id="faq">
 
                 <section className="flex flex-col   pb-[3rem]" id="faq">
 
                     <div className="flex flex-col w-[100%] mx-auto mt-[3rem] text-center  ">
-                        <div className="w-[100%] mx-auto textJS text-[3rem]">
-                            FAQS
+                        <div className="w-[100%] mx-auto textJS text-[2.7rem] text-white">
+                            Frequentlty Asked Questions
                         </div>
                     </div>
 
@@ -91,18 +91,19 @@ const Faq = () => {
                     {questions.map((q, index) => (
                         <li key={q.question}>
                             <div
-                                className={`${index !== -1 ? "rounded-[0.77075rem] bg-opacity-50 text-[#392467] bg-gray-300 opacity-80 inset-shadow " : ""
+                                className={`${index !== -1 ? "rounded-[0.77075rem]  text-[#fff] bg-[#070F2B] opacity-80 inset-shadow " : ""
                                     } gap-[0.3rem] flex flex-col`}
                             >
                                 <div
-                                    className="flex flex-col justify-between cursor-pointer py-2 "
+                                    className="flex flex-col justify-between cursor-pointer border-gray-700 "
                                     onClick={() => {
                                         toggle(index);
                                     }}
                                     style={{
-                                        borderRadius: '0.77075rem',
-                                        background: 'rgba(224, 224, 224, 0.10)',
-                                        boxShadow: '0px 2.055px 7.687px 0px rgba(248, 248, 248, 0.38) inset',
+                                        borderRadius: '0.4rem',
+
+                                        borderWidth: '0.06rem'
+
                                     }}
                                 >
 
@@ -110,20 +111,22 @@ const Faq = () => {
 
                                         <div className="text-start ml-4   " >
 
-                                            <span className=" text-[#33186B]">{`0${index + 1}`}</span>
-                                            <span className=" ml-6 text-[#33186B]">{`${q.question}`}</span>
+                                            <span className=" text-[#fff] font-bold">{`0${index + 1}`}</span>
+                                            <span className=" ml-6 text-[#fff]">{`${q.question}`}</span>
+
+                                            <div
+
+                                                className={`float-right   h-[full] bg-gray-700  relative  w-[4rem] transform ${question === index ? ' bg-[#A962FF]' : ''}`}
+                                            >
+                                                {question != index ? (
+                                                    <h1 className="text-white bg-[#A962FF] text-[2rem] flex justify-center">+</h1>
+                                                ) : (
+                                                    <h1 className="  text-[2rem] flex justify-center">-</h1>
+                                                )}
+
+                                            </div>
                                         </div>
-                                        <div
 
-                                            className={`float-right text-[#33186B] my-auto mr-4 transform ${question === index ? 'rotate-180' : ''}`}
-
-
-
-                                        >
-                                            <svg className="" width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M27.6771 2.44076L14.9459 12.3049L2.21469 2.44076" stroke="#5D3587" strokeWidth="4.25414" />
-                                            </svg>
-                                        </div>
                                     </div>
 
                                     <div
